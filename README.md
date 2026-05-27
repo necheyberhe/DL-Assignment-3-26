@@ -100,3 +100,31 @@ project/
         ├── lyrics_train_set.csv
         ├── lyrics_test_set.csv
         └── midi_files/
+# Requirements
+pip install torch torchvision torchaudio
+pip install pandas numpy matplotlib scikit-learn
+pip install gensim pretty_midi
+pip install tensorboard        
+
+# Running the Project
+
+Open Notebook
+Open:
+main.ipynb
+Run all cells sequentially.
+Training
+The notebook trains:
+Baseline model
+Global MIDI model
+Aligned MIDI model
+Validation losses are plotted automatically.
+
+# TensorBoard
+
+TensorBoard logs are saved to:
+
+runs/lyrics_rnn_experiment
+
+Launch TensorBoard:
+
+tensorboard --logdir=runs
